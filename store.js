@@ -20,8 +20,7 @@ export default new Vuex.Store({
       state.isPlaying = toggle !== undefined ? toggle : !state.isPlaying
     },
     changeCover(state) {
-      let t = true
-      while (t) {
+      while (1) {
         const index = Math.floor(Math.random() * 3)
         const coverUrl = COVER_URL[index]
         if (coverUrl !== state.coverUrl) {
